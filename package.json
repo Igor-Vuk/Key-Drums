@@ -1,0 +1,25 @@
+{
+  "name": "key_drums",
+  "version": "1.0.0",
+  "description": "Use keyboard to make sound",
+  "main": "server.js",
+  "author": "Igor Vukelic",
+  "license": "MIT",
+  "scripts": {
+    "start": "node_modules/.bin/babel-node server.js",
+    "start-dev": "nodemon && node_modules/.bin/babel-node server.js",
+    "browsersync": "node_modules/.bin/browser-sync start --proxy localhost:3000 --no-open --files public/*.html public/*.js public/*.css"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.2",
+    "browser-sync": "^2.18.8",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.0",
+    "standard": "^10.0.1"
+  },
+  "repository": "git@github.com:Igor-Vuk/Key-Drums.git"
+}
